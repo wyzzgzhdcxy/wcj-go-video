@@ -1,0 +1,20 @@
+[
+  {
+    "link": "videoClip",
+    "text": "视频裁剪",
+    "emoji": "✂️",
+    "category": "视频工具"
+  },
+  {
+    "link": "videoBrowse",
+    "text": "视频浏览",
+    "emoji": "🎬",
+    "category": "视频工具"
+  },
+  {
+    "link": "mergeVideo",
+    "text": "视频合并",
+    "emoji": "📹",
+    "category": "视频工具"
+  }
+]
