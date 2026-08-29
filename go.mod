@@ -4,7 +4,7 @@ go 1.25.3
 
 require (
 	github.com/go-basic/uuid v1.0.0
-	github.com/wailsapp/wails/v2 v2.12.0
+	github.com/wailsapp/wails/v2 v2.14.0
 	github.com/wyzzgzhdcxy/wcj-go-common v0.0.0-20260419095559-e41d5f86e3eb
 	modernc.org/sqlite v1.49.1
 )
@@ -45,10 +45,10 @@ require (
 	github.com/wailsapp/mimetype v1.4.1 // indirect
 	go.opentelemetry.io/otel v1.38.0 // indirect
 	go.opentelemetry.io/otel/trace v1.38.0 // indirect
-	golang.org/x/crypto v0.49.0 // indirect
-	golang.org/x/net v0.52.0 // indirect
-	golang.org/x/sys v0.42.0 // indirect
-	golang.org/x/text v0.35.0 // indirect
+	golang.org/x/crypto v0.53.0 // indirect
+	golang.org/x/net v0.56.0 // indirect
+	golang.org/x/sys v0.46.0 // indirect
+	golang.org/x/text v0.39.0 // indirect
 	modernc.org/libc v1.72.0 // indirect
 	modernc.org/mathutil v1.7.1 // indirect
 	modernc.org/memory v1.11.0 // indirect
