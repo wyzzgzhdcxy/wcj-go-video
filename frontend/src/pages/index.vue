@@ -21,62 +21,33 @@ html, body {
 }
 
 .sidebar {
-  width: 50px;
+  width: 170px;
   background: #ffffff;
   border-right: 1px solid #e8eaed;
   display: flex;
   flex-direction: column;
-  align-items: center;
   box-shadow: 2px 0 8px rgba(0, 0, 0, 0.05);
   z-index: 100;
-}
-
-.sidebar-logo {
-  padding: 20px 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-bottom: 1px solid #e8eaed;
-  position: relative;
-}
-
-.logo-icon {
-  font-size: 24px;
-  background: linear-gradient(135deg, #409eff, #6c8fff);
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  overflow-x: hidden;
 }
 
 .sidebar-nav {
   flex: 1;
   width: 100%;
-  padding: 8px 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  overflow: hidden;
+  padding: 8px 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .nav-item {
-  width: 40px;
-  height: 40px;
-  padding: 0;
+  width: 100%;
+  padding: 8px 12px;
   display: flex;
   align-items: center;
-  justify-content: center;
   cursor: pointer;
-  position: relative;
   color: #606266;
   transition: background-color 0.2s;
   text-decoration: none;
-  border-radius: 8px;
 }
 
 .nav-item:hover {
@@ -89,56 +60,13 @@ html, body {
   background-color: #ecf5ff;
 }
 
-.nav-item.active::before {
-  content: '';
-  position: absolute;
-  left: 50%;
-  top: 0;
-  transform: translateX(-50%);
-  width: 20px;
-  height: 3px;
-  background-color: #409eff;
-  border-radius: 0 0 2px 2px;
-}
-
 .nav-icon {
   font-size: 18px;
-  width: 20px;
-  height: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-right: 8px;
 }
 
-.nav-tooltip {
-  position: absolute;
-  left: calc(100% + 8px);
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 6px 10px;
-  border-radius: 4px;
-  font-size: 11px;
-  white-space: nowrap;
-  z-index: 1000;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.2s;
-}
-
-.nav-item:hover .nav-tooltip {
-  opacity: 1;
-}
-
-.sidebar-footer {
-  width: 100%;
-  padding: 12px 0;
-  border-top: 1px solid #e8eaed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
+.nav-text {
+  font-size: 12px;
 }
 
 .main-content {
@@ -169,7 +97,7 @@ html, body {
             @click="navigateTo(item.link)"
           >
             <div class="nav-icon">{{ item.emoji }}</div>
-            <div class="nav-tooltip">{{ item.text }}</div>
+            <div class="nav-text">{{ item.text }}</div>
           </div>
         </div>
       </div>
